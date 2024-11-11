@@ -32,23 +32,23 @@ public class StudentAccount extends JFrame {
         JButton removeButton = new JButton("Remove Account");
         JButton viewButton = new JButton("View Details");
 
-        // Set background color for buttons and panel
+       
         buttonPanel.setBackground(new Color(176, 196, 222)); // Light steel blue
         addButton.setBackground(Color.LIGHT_GRAY);
         removeButton.setBackground(Color.LIGHT_GRAY);
         viewButton.setBackground(Color.LIGHT_GRAY);
 
-        // Add action listeners to buttons
+   
         addButton.addActionListener(e -> addNewAccount());
         removeButton.addActionListener(e -> removeSelectedAccount());
         viewButton.addActionListener(e -> viewAccountDetails());
 
-        // Add buttons to panel
+     
         buttonPanel.add(addButton);
         buttonPanel.add(removeButton);
         buttonPanel.add(viewButton);
 
-        // Add button panel to the bottom of the frame
+    
         add(buttonPanel, "South");
     }
 
@@ -98,7 +98,7 @@ public class StudentAccount extends JFrame {
         SwingUtilities.invokeLater(() -> new StudentAccount().setVisible(true));
     }
 
-    // Inner class for account details
+    
     class StudentEmailAccount {
         private String vmNo;
         private String studentName;
